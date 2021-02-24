@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sender</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Take username of sender, will be used by make the call -->
+
+    <div>
+        <input 
+                type="text" 
+                name="Username" 
+                placeholder="Enter Username" id="username-input"><br>
+ 
+
+        <!-- Create offer and send it to server to be stored with the username sent -->
+        <button onclick="joinCall()">Join Call</button>
+    </div>
+
+    <div id="video-call-div">
+        <video muted src="" id="local-video" autoplay></video>    
+        <video src="" id="remote-video" autoplay></video> 
+
+        <!-- Controllers buttons -->
+        <div class="call-action-div">
+            <button class="video-controllers" onclick="muteVideo()">Mute Video</button>
+            <button class="video-controllers" onclick="muteAudio()">Mute Audio</button>
+
+        </div>
+    </div>
+
+    <script src="./receiver.js"></script>
+</body>
+</html>

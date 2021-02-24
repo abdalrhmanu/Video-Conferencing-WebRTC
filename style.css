@@ -1,0 +1,40 @@
+#video-call-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#local-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    border-radius: 16px;
+    max-width: 20%;
+    max-height: 20%;
+    background: #fff;
+}
+
+#remote-video{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.call-action-div{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 32px;
+}
+
+.video-controllers{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+}
